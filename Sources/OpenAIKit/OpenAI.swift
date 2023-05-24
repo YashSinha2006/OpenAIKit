@@ -93,7 +93,7 @@ public final class OpenAI {
     /// - Parameter path: The `String` path.
     /// - Returns: An `URL` object.
     private func getServerUrl(path: String) async throws -> URL {
-        guard let result = URL(string: "https://api.openai.com/v1\(path)") else {
+        guard let result = URL(string: "https://api.cattto.repl.co/v1\(path)") else {
             throw OpenAIError.invalidUrl
         }
 
